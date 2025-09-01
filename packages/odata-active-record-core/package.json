@@ -35,12 +35,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-org/odata-active-record.git"
+    "url": "https://github.com/rvegajr/odata-active-record.git"
   },
   "bugs": {
-    "url": "https://github.com/your-org/odata-active-record/issues"
+    "url": "https://github.com/rvegajr/odata-active-record/issues"
   },
-  "homepage": "https://github.com/your-org/odata-active-record#readme",
+  "homepage": "https://github.com/rvegajr/odata-active-record#readme",
   "dependencies": {
     "better-sqlite3": "^9.0.0",
     "mongodb": "^6.0.0",
