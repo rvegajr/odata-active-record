@@ -1,6 +1,6 @@
 {
   "name": "odata-active-record-astro",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Astro integration for OData Active Record pattern",
   "type": "module",
   "main": "./dist/index.js",

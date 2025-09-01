@@ -1,6 +1,6 @@
 {
   "name": "odata-active-record-core",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Core Active Record implementation for OData - The easiest way to interact with OData APIs",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

@@ -1,6 +1,6 @@
 {
   "name": "odata-active-record-contracts",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Contracts and interfaces for OData Active Record pattern",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
