@@ -1,0 +1,18 @@
+{
+  "name": "odata-active-record-basic-example",
+  "version": "1.0.0",
+  "description": "Basic usage example for OData Active Record",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "odata-active-record-core": "file:../../packages/odata-active-record-core",
+    "odata-active-record-contracts": "file:../../packages/odata-active-record-contracts"
+  },
+  "keywords": ["odata", "active-record", "orm", "example"],
+  "author": "Your Name",
+  "license": "MIT"
+}

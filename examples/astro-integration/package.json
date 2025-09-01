@@ -1,0 +1,21 @@
+{
+  "name": "odata-active-record-astro-example",
+  "version": "1.0.0",
+  "description": "Astro integration example for OData Active Record",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^4.0.0",
+    "odata-active-record-astro": "file:../../packages/odata-active-record-astro",
+    "odata-active-record-core": "file:../../packages/odata-active-record-core",
+    "odata-active-record-contracts": "file:../../packages/odata-active-record-contracts"
+  },
+  "keywords": ["odata", "active-record", "astro", "example"],
+  "author": "Your Name",
+  "license": "MIT"
+}

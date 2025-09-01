@@ -1,0 +1,64 @@
+{
+  "name": "odata-active-record",
+  "version": "0.1.0",
+  "description": "The easiest way to interact with OData APIs ever - Active Record pattern with seamless data type handling",
+  "main": "packages/odata-active-record-core/dist/index.js",
+  "types": "packages/odata-active-record-core/dist/index.d.ts",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "test": "npm run test --workspaces --if-present",
+    "test:watch": "npm run test:watch --workspaces --if-present",
+    "test:coverage": "npm run test:coverage --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present",
+    "lint:fix": "npm run lint:fix --workspaces --if-present",
+    "clean": "npm run clean --workspaces --if-present",
+    "dev": "npm run dev --workspaces --if-present",
+    "type-check": "tsc --noEmit",
+    "install:all": "npm install && npm install --prefix packages/odata-active-record-contracts && npm install --prefix packages/odata-active-record-core && npm install --prefix packages/odata-active-record-astro",
+    "prepublishOnly": "npm run build && npm run test"
+  },
+  "keywords": [
+    "odata",
+    "active-record",
+    "orm",
+    "typescript",
+    "javascript",
+    "api",
+    "database",
+    "mongodb",
+    "sqlite",
+    "astro",
+    "interface-generation",
+    "schema-first"
+  ],
+  "author": "OData Active Record Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-org/odata-active-record.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-org/odata-active-record/issues"
+  },
+  "homepage": "https://github.com/your-org/odata-active-record#readme",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0",
+    "@vitest/ui": "^1.0.0",
+    "tsx": "^4.0.0",
+    "eslint": "^8.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "prettier": "^3.0.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^15.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "packageManager": "npm@10.0.0"
+}

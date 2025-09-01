@@ -1,0 +1,49 @@
+{
+  "name": "odata-active-record-contracts",
+  "version": "0.1.0",
+  "description": "Contracts and interfaces for OData Active Record pattern",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest --run",
+    "test:watch": "vitest --watch",
+    "test:coverage": "vitest --coverage --run",
+    "clean": "rm -rf dist",
+    "dev": "tsc --watch"
+  },
+  "keywords": [
+    "odata",
+    "active-record",
+    "contracts",
+    "interfaces",
+    "typescript",
+    "types"
+  ],
+  "author": "OData Active Record Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-org/odata-active-record.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-org/odata-active-record/issues"
+  },
+  "homepage": "https://github.com/your-org/odata-active-record#readme",
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

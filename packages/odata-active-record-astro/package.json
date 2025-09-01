@@ -1,0 +1,67 @@
+{
+  "name": "odata-active-record-astro",
+  "version": "0.1.0",
+  "description": "Astro integration for OData Active Record pattern",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest --run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest --coverage",
+    "test:real": "vitest --run real-astro-integration.test.ts",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "eslint src --ext .ts --fix",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "odata-active-record-contracts": "file:../odata-active-record-contracts",
+    "odata-active-record-core": "file:../odata-active-record-core"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "vitest": "^1.6.1",
+    "@vitest/coverage-v8": "^1.6.1",
+    "eslint": "^8.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0"
+  },
+  "peerDependencies": {
+    "astro": "^4.0.0"
+  },
+  "keywords": [
+    "odata",
+    "active-record",
+    "astro",
+    "orm",
+    "api",
+    "ssr",
+    "ssg",
+    "edge"
+  ],
+  "author": "OData Active Record Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-org/odata-active-record.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-org/odata-active-record/issues"
+  },
+  "homepage": "https://github.com/your-org/odata-active-record#readme",
+  "publishConfig": {
+    "access": "public"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "odata-active-record-production-example",
+  "version": "1.0.0",
+  "description": "Production-ready example demonstrating OData Active Record with connection pooling, retry mechanisms, and monitoring",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "odata-active-record-core": "file:../../packages/odata-active-record-core",
+    "odata-active-record-contracts": "file:../../packages/odata-active-record-contracts",
+    "mongodb": "^6.3.0",
+    "better-sqlite3": "^9.2.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "keywords": [
+    "odata",
+    "active-record",
+    "production",
+    "connection-pooling",
+    "retry-mechanisms"
+  ],
+  "author": "OData Active Record Team",
+  "license": "MIT"
+}

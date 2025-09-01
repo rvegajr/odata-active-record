@@ -1,0 +1,57 @@
+{
+  "name": "odata-active-record-core",
+  "version": "0.1.0",
+  "description": "Core Active Record implementation for OData - The easiest way to interact with OData APIs",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest --run",
+    "test:watch": "vitest --watch",
+    "test:coverage": "vitest --coverage --run",
+    "clean": "rm -rf dist",
+    "dev": "tsc --watch"
+  },
+  "keywords": [
+    "odata",
+    "active-record",
+    "orm",
+    "typescript",
+    "database",
+    "mongodb",
+    "sqlite",
+    "interface-generation"
+  ],
+  "author": "OData Active Record Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-org/odata-active-record.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-org/odata-active-record/issues"
+  },
+  "homepage": "https://github.com/your-org/odata-active-record#readme",
+  "dependencies": {
+    "better-sqlite3": "^9.0.0",
+    "mongodb": "^6.0.0",
+    "odata-active-record-contracts": "file:../odata-active-record-contracts"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
